@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<h1>Generateur de Mots de Passe</h1>
+<input type="text" id="password" readonly>
+<button onclick="generatePassword()">Générer</button>
+<button onclick="copyPassword()" >Copier</button>
+<br>
+<label > <input type="checkbox" id="lowercase" checked>Inclure des minuscules</label>
+<br>
+<label > <input type="checkbox" id="uppercase" checked>Inclure des majuscules</label>
+<br>
+<label > <input type="checkbox" id="numbers" checked>Inclure des chiffres</label>
+<br>
+<label > <input type="checkbox" id="symbols" checked>Inclure des symboles</label>
+<br>
+
+<label for="length">Longueur</label>
+<input type="number" id="length" min="4" max="24" value="8">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
