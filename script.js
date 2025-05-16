@@ -23,8 +23,8 @@ if(charset.length === 0){
     return;
 }
 const length = parseInt(document.getElementById('length').value);
-if (length < 4 || length > 24){
-    alert('La longueur doit être entre 4 et 24 caratères.');
+if (length < 4 || length > 80000){
+    alert('La longueur doit être entre 4 et 80000 caratères.');
     return;
 }
 let password ='';
